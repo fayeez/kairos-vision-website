@@ -84,7 +84,7 @@
 		elseif (isset($options['frontpageinput']) && $options['frontpageinput'] == 'dynamicimages' )
 		{
 			
-			print '<body class="fader" onload="fader(1);">';
+			print '<body class="static-bg fader" onload="fader(1);">';
 			display_images();
 		}
 	}
@@ -92,7 +92,7 @@
 	{
 		if (isset($options['frontpageinput']) && $options['frontpageinput'] == 'dynamicimages' )
 		{
-			print '<body class="fader" id="dampen-bg" onload="fader(0.6);">';
+			print '<body class="static-bg fader" id="dampen-bg" onload="fader(0.6);">';
 			display_images();
 		}
 		elseif (isset($options['frontpageinput']) && $options['frontpageinput'] == 'staticimage')
@@ -112,12 +112,14 @@
 	// 'url( "' + images[num] + '")'
 	width = checkScreenSize();
 	if(width < 581) {
-		$j('body').removeClass('fader');
-		$j('.img-bg').remove();
-		$j('body').addClass('static-bg');
-		$j('#dampen-bg').removeAttr('id');
-		$j('.static-bg').css({'background-image' : 'images/water_monk.jpg'}); 
-		$j('#flow-wrapper').removeAttr('id');
+        document.getElementById("static-bg").style.background="url('images/water_monk.jpg');
+        document.getElementById("static-bg").style.backgroundRepeat="repeat-y');
+		//$j('body').removeClass('fader');
+		//$j('.img-bg').remove();
+		//$j('body').addClass('static-bg');
+		//$j('#dampen-bg').removeAttr('id');
+		//$j('.static-bg').css({'background-image' : 'images/water_monk.jpg'}); 
+		//$j('#flow-wrapper').removeAttr('id');
 	}
 	 </script>
 
