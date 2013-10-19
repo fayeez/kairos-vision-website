@@ -32,7 +32,7 @@ function fader(fadeVal)
         imagepath = "http://www.kairos-vision.com/wp-content/themes/kairos-vision-website/";
         width = checkScreenSize();
         document.getElementById("static-bg").style.background="url('" + imagepath + images[num] + "')";
-        //document.getElementById("static-bg").style.backgroundSize="100%";
+        document.getElementById("static-bg").style.backgroundSize="100%";
         document.getElementById("static-bg").style.backgroundRepeat="no-repeat";
         document.getElementById("static-bg").style.backgroundAttachment="fixed";
         document.getElementById("static-bg").style.backgroundPosition="center";
