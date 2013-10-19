@@ -105,24 +105,7 @@
 	}
 	?>
 	<script>
-	$j = jQuery.noConflict();
-	images = new Array();
-	images = ["images/CreatingSwirls.jpg", "images/NasMatic-Final.jpg", "images/WorldWonders.jpg", "images/water_monk.jpg", "images/Kairos_Street.jpg", "images/UltimateGohanFinal.jpg"];
-	num = Math.floor(Math.random() * images.length) + 0;
-	// 'url( "' + images[num] + '")'
-	width = checkScreenSize();
-	if(width < 581) {
-        $j(".fader").removeClass();
-        document.getElementById("static-bg").style.backgroundColor="red";
-        document.getElementById("static-bg").style.background="url('images/water_monk.jpg')";
-        document.getElementById("static-bg").style.backgroundRepeat="repeat-y";
-		//$j('body').removeClass('fader');
-		//$j('.img-bg').remove();
-		//$j('body').addClass('static-bg');
-		//$j('#dampen-bg').removeAttr('id');
-		//$j('.static-bg').css({'background-image' : 'images/water_monk.jpg'}); 
-		//$j('#flow-wrapper').removeAttr('id');
-	}
+	
 	 </script>
 
 		<div id="container">
