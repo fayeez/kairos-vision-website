@@ -43,8 +43,9 @@ function fader(fadeVal)
             //document.getElementById("static-bg").style.marginleft="-250px";
         }
     }
-    width = checkScreenSize();
-    if(width > 580) {
+    else {
+        //width = checkScreenSize();
+    //if(width > 580) {
         var $j=jQuery.noConflict()
         $j(".fader .img-bg").css('opacity', fadeVal);
         $j(".fader #1").show("fade", 2000);
