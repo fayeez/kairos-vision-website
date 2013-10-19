@@ -34,7 +34,7 @@ function fader(fadeVal)
         document.getElementById("static-bg").style.backgroundColor="black";
         document.getElementById("static-bg").style.background="url('" + imagepath + images[num] + "')";
         document.getElementById("static-bg").style.backgroundSize="100%";
-        document.getElementById("static-bg").style.backgroundRepeat="no-repeat";
+        document.getElementById("static-bg").style.backgroundRepeat="repeat";
         document.getElementById("static-bg").style.backgroundAttachment="fixed";
         document.getElementById("static-bg").style.backgroundPosition="center";
         //document.getElementById("static-bg").style.marginTop="-250px";
