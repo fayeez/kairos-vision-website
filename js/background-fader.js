@@ -33,7 +33,7 @@ function fader(fadeVal)
         width = checkScreenSize();
         document.getElementById("static-bg").style.background="url('" + imagepath + images[num] + "')";
         document.getElementById("static-bg").style.backgroundSize="100%";
-        document.getElementById("static-bg").style.verticalAlign="middle";
+        document.getElementById("static-bg").style.top="50%";
         document.getElementById("static-bg").style.backgroundRepeat="no-repeat";
         
     }
