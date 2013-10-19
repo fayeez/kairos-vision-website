@@ -29,7 +29,7 @@ function fader(fadeVal)
         images = new Array();
         images = ["images/CreatingSwirls.jpg", "images/NasMatic-Final.jpg", "images/WorldWonders.jpg", "images/water_monk.jpg", "images/Kairos_Street.jpg", "images/UltimateGohanFinal.jpg"];
         num = Math.floor(Math.random() * images.length) + 0;
-        imagepath = "url('http://www.kairos-vision.com/wp-content/themes/kairos-vision-website/')";
+        imagepath = "http://www.kairos-vision.com/wp-content/themes/kairos-vision-website/";
         width = checkScreenSize();
         document.getElementById("static-bg").style.background="url('" + imagepath + images[num] + "')";
         document.getElementById("static-bg").style.backgroundSize="600px";
