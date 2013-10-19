@@ -30,16 +30,9 @@ function fader(fadeVal)
         images = ["images/CreatingSwirls.jpg", "images/NasMatic-Final.jpg", "images/WorldWonders.jpg", "images/water_monk.jpg", "images/Kairos_Street.jpg", "images/UltimateGohanFinal.jpg"];
         num = Math.floor(Math.random() * images.length) + 0;
         width = checkScreenSize();
-        //$j(".fader").removeClass();
-        document.getElementById("static-bg").style.backgroundColor="red";
         document.getElementById("static-bg").style.background="url('http://www.kairos-vision.com/wp-content/themes/kairos-vision-website/images/water_monk.jpg')";
-        document.getElementById("static-bg").style.backgroundRepeat="repeat-y";
-          //$j('body').removeClass('fader');
-          //$j('.img-bg').remove();
-          //$j('body').addClass('static-bg');
-          //$j('#dampen-bg').removeAttr('id');
-          //$j('.static-bg').css({'background-image' : 'images/water_monk.jpg'}); 
-          //$j('#flow-wrapper').removeAttr('id');
+        document.getElementById("static-bg").style.backgroundSize="200px";
+        document.getElementById("static-bg").style.backgroundRepeat="repeat";
         
     }
 }
