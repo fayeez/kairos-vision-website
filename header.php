@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<?php // Check theme options for the colour scheme
+	<?php // Check theme options for the colour scheme -- blah test
 		$options=get_option('sleek_theme_options');
 		if (isset($options['colourscheme']))
 		{
