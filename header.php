@@ -116,7 +116,7 @@
 		$j('.img-bg').remove();
 		$j('body').addClass('static-bg');
 		$j('#dampen-bg').removeAttr('id');
-		$j('.static-bg').css({'background-image' : '<?php echo bloginfo('template_directory')?>/'images[num]}); 
+		$j('.static-bg').css({'background-image' : '<?php echo bloginfo('template_directory')?>/'print(images[num])}); 
 		$j('#flow-wrapper').removeAttr('id');
 	}
 	 </script>
