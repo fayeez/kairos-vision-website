@@ -58,7 +58,7 @@
 		nav ul ul a { border-left: 1px solid <?php print $options["color"]; ?>; }
 		nav li a:hover { background : <?php print $options["color"]; ?>; }
 		#flow-wrapper, .commentlist li { border-top: 1px solid <?php print $options["color"]; ?>; border-left: 1px solid <?php print $options["color"]; ?>; }
-		.image-style, #submit, #field, #message_field { border: 1px solid <?php print $options["color"]; ?>; }
+		.image-style, #submit, #field, #message-field { border: 1px solid <?php print $options["color"]; ?>; }
 		.main-background { border-left: 1px solid <?php print $options["color"]; ?>; border-right: 1px solid <?php print $options["color"]; ?>; }
 		.post-info li { border-right: 1px solid <?php print $options["color"]; ?>; }
 		.post-info li:first-child { border-left: 1px solid <?php print $options["color"]; ?>; }
