@@ -84,7 +84,7 @@
 		elseif (isset($options['frontpageinput']) && $options['frontpageinput'] == 'dynamicimages' )
 		{
 			
-			print '<body class="static-bg fader" onload="fader(1);">';
+			print '<body id="static-bg" class="fader" onload="fader(1);">';
 			display_images();
 		}
 	}
@@ -92,7 +92,7 @@
 	{
 		if (isset($options['frontpageinput']) && $options['frontpageinput'] == 'dynamicimages' )
 		{
-			print '<body class="static-bg fader" id="dampen-bg" onload="fader(0.6);">';
+			print '<body id="static-bg" class="fader" id="dampen-bg" onload="fader(0.6);">';
 			display_images();
 		}
 		elseif (isset($options['frontpageinput']) && $options['frontpageinput'] == 'staticimage')
