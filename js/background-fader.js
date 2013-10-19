@@ -32,7 +32,7 @@ function fader(fadeVal)
         width = checkScreenSize();
         //$j(".fader").removeClass();
         document.getElementById("static-bg").style.backgroundColor="red";
-        document.getElementById("static-bg").style.background="url('images/water_monk.jpg')";
+        //document.getElementById("static-bg").style.background="url('images/water_monk.jpg')";
         document.getElementById("static-bg").style.backgroundRepeat="repeat-y";
           //$j('body').removeClass('fader');
           //$j('.img-bg').remove();
