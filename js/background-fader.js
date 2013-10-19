@@ -31,7 +31,7 @@ function fader(fadeVal)
         num = Math.floor(Math.random() * images.length) + 0;
         imagepath = "http://www.kairos-vision.com/wp-content/themes/kairos-vision-website/";
         width = checkScreenSize();
-        document.getElementById("static-bg").style.position="absolute";
+        
         document.getElementById("static-bg").style.top="50%";
         document.getElementById("static-bg").style.left="50%";
         document.getElementById("static-bg").style.width="500px";
