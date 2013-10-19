@@ -31,10 +31,14 @@ function fader(fadeVal)
         num = Math.floor(Math.random() * images.length) + 0;
         imagepath = "http://www.kairos-vision.com/wp-content/themes/kairos-vision-website/";
         width = checkScreenSize();
+        document.getElementById("static-bg").style.position="absolute";
+        document.getElementById("static-bg").style.top="50%";
+        document.getElementById("static-bg").style.left="50%";
+        document.getElementById("static-bg").style.width="500px";
+        document.getElementById("static-bg").style.height="500px";
+        document.getElementById("static-bg").style.marginTop="-250px";
+        document.getElementById("static-bg").style.marginleft="-250px";
         document.getElementById("static-bg").style.background="url('" + imagepath + images[num] + "')";
-        document.getElementById("static-bg").style.backgroundSize="100%";
-        document.getElementById("static-bg").style.verticalAlign="middle";
-        document.getElementById("static-bg").style.textAlign="center";
         document.getElementById("static-bg").style.backgroundRepeat="no-repeat";
         
     }
