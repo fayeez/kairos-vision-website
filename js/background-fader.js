@@ -28,8 +28,7 @@ function fader(fadeVal)
     else {
         var url= window.location.href;
         var spliturl = url.split("/");
-        alert(spliturl);
-        if (spliturl < 5) {
+        if (spliturl.length < 5) {
             images = new Array();
             images = ["images/CreatingSwirls.jpg", "images/NasMatic-Final.jpg", "images/WorldWonders.jpg", "images/water_monk.jpg", "images/Kairos_Street.jpg", "images/UltimateGohanFinal.jpg"];
             num = Math.floor(Math.random() * images.length) + 0;
