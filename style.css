@@ -124,6 +124,10 @@ only screen and (max-device-width : 320px){
 	#flow-wrapper {
 	visibility: hidden !important;
 	}
+	.call-to-action h2 {
+		margin: auto;
+		font-size: 0.5em !important;
+	}	
 	.main-content {
 		padding-top: 15%;
 	}
