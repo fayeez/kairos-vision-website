@@ -31,7 +31,7 @@ function fader(fadeVal)
         num = Math.floor(Math.random() * images.length) + 0;
         width = checkScreenSize();
         document.getElementById("static-bg").style.background="url('http://www.kairos-vision.com/wp-content/themes/kairos-vision-website/images/water_monk.jpg')";
-        document.getElementById("static-bg").style.backgroundSize="200px";
+        document.getElementById("static-bg").style.backgroundSize="600px";
         document.getElementById("static-bg").style.backgroundRepeat="repeat";
         
     }
