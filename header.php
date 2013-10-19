@@ -112,6 +112,7 @@
 	// 'url( "' + images[num] + '")'
 	width = checkScreenSize();
 	if(width < 581) {
+        $j(".fader").removeClass();
         document.getElementById("static-bg").style.background="url('images/water_monk.jpg')";
         document.getElementById("static-bg").style.backgroundRepeat="repeat-y";
 		//$j('body').removeClass('fader');
