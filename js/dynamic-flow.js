@@ -13,7 +13,7 @@ $l(function() {
             var url = document.URL;
             var a = document.createElement('a');
             a.setAttribute('href', url.replace(currentPageName, nextPageName));
-            a.appendChild(document.createTextNode('Portfolio'));
+            a.appendChild(document.createTextNode('Work'));
             a.className = 'call-to-action';
             return a;
         });
