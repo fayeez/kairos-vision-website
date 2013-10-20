@@ -75,24 +75,3 @@ $l(function() {
         
     };
 });
-
-//Changes flow text to symbol when page size becomes a certain width
-
-//$l(function() {
-//    var $originalFlow = $l('#flow-size .call-to-action').text();
-//    
-//    //TODO: check on refresh too
-//    
-//    $l(window).resize(function(){
-//        
-//        if ($l(window).width() < 580) {
-//            
-//            $l('#flow-size .call-to-action').text('>>');
-//                                  
-//        }
-//        else {
-//            // find the current page and use that to anticipate the next page
-//            $l('#flow-size .call-to-action').text($originalFlow);
-//        }
-//    });
-//});
