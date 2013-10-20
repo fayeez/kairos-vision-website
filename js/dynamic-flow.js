@@ -48,12 +48,13 @@ $l(function() {
     }
     else if (pathname.search("contact-me") == 1) {
         //Contact us page
-        var nextPageName = 'home'
+        var currentPageName = 'contact-me'
+        var nextPageName = 'blog'
         $l('#flow-size .call-to-action').text(''); //Clear whatever is there already
         $l('#flow-size .call-to-action').wrap(function() {
             var url = document.URL;
             var a = document.createElement('a');
-            a.setAttribute('href', url.replace('contact-us/', 'blog'));
+            a.setAttribute('href', url.replace(currentPageName, nextPageName));
             a.appendChild(document.createTextNode(nextPageName));
             a.className = 'call-to-action';
             return a;
