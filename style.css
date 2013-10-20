@@ -77,7 +77,7 @@ only screen and (max-device-width : 1100px){
 	}
 }
 @media only screen and (max-width : 580px), only screen and (max-device-width : 580px){
-	#flow-size a{
+	#flow-size {
 		font-size: 0.5em !important;
 	}
 	.main-content {
@@ -129,7 +129,7 @@ only screen and (max-device-width : 320px){
 		margin-left: 0% !important;
 		width: 100% !important;
 	}
-	.call-to-action h2 {
+	.call-to-action {
 		margin: auto;
 		font-size: 0.5em !important;
 	}	
@@ -523,6 +523,7 @@ ul li ul li {
     right: 0px;
 	position: fixed;
 	z-index: 1;
+	font-size:1.3em;
 }
 #flow-wrapper a:hover {
 	color: #7e2027;
