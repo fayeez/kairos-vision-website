@@ -89,7 +89,7 @@ only screen and (max-device-width : 1100px){
 		margin-bottom: 10%;
 	}
 	div img {
-		width: 98%;
+		/*width: 98%;*/
 	}
 	nav ul {
 		margin-left: 165px !important;
