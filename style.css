@@ -627,7 +627,7 @@ ul li ul li {
 .post-minor-img {
 	height: 200px;
 	width: 100%;
-    border-bottom: 1px solid #87222a !important;
+    
 	overflow: hidden !important;
 }
 .post-minor-img img {
