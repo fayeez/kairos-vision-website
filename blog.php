@@ -79,7 +79,7 @@ Template Name: Blog
 												<?php if (get_the_post_thumbnail())
 													{
 												?>
-														 <div class="box19 post-minor-img">
+														 <div class="box20 post-minor-img">
 															<a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('post-thumbnail', array( 'class'	=> "content-img-medium attachment-post-thumbnail")); ?></a>
 														</div> 
 												<?php
