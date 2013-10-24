@@ -629,7 +629,7 @@ ul li ul li {
 	width: 100%;
 	overflow: hidden !important; display: inline-block;
 }
-.post-minor-img img {
+.post-minor-img a img {
 	border-bottom: 1px solid #87222a !important;
 }
 .post-nav {
