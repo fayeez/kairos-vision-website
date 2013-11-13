@@ -161,6 +161,8 @@ hr {
 	border: none;
 	background-color: #8a222c;
 	height: 2px;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 /*Image styling*/
 img {
