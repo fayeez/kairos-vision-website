@@ -518,7 +518,7 @@ ul li ul li {
 	list-style-position: inside;
 	list-style-image: url("images/other/bullet02.png");
 }
-li .no-list-style {
+ul .no-list-style {
  list-style-type: none !important;
 }
 .clearfix:before,  
