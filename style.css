@@ -518,6 +518,7 @@ ul li ul li {
 }
 ul .no-list-style {
  list-style-type: none !important;
+ list-style-image: url(" ") !important;
 }
 .clearfix:before,  
 .clearfix:after {  
