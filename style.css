@@ -754,6 +754,9 @@ blockquote {
 .margin-bottom {
 	margin-bottom: 7%;
 }
+.margin-top {
+	margin-top: 3%;
+}
 .postmetadata {
 	float: left;
 	text-decoration: none;
