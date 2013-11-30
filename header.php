@@ -6,16 +6,16 @@
 		{
 			if ($options['colourscheme'] == 'Light')
 			{
-				$stylesheet = "/style.css";
+				$stylesheet = "/style.min.css";
 			}
 			else if ($options['colourscheme'] == 'Dark')
 			{
-				$stylesheet = "/style.css";
+				$stylesheet = "/style.min.css";
 			}
 		}
 		else
 		{
-			$stylesheet = "/style.css";
+			$stylesheet = "/style.min.css";
 		}
 		
 	?>
