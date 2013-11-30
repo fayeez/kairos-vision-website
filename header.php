@@ -32,6 +32,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Neuton:200' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+		<script type="text/javascript">
+			var templateDir = "<?php bloginfo('template_directory') ?>";
+		</script>
 		<?php
 		include("jquery.php");
 		wp_head();
