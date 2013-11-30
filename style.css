@@ -182,6 +182,9 @@ img {
 img .no-border {
 	border: none !important;
 }
+#bit {
+	bottom: 230px !important; 
+}
 .portfolio a img{
 	width: 102%;
 }
