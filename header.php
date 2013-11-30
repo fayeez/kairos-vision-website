@@ -21,7 +21,7 @@
 	?>
 	<head>
 		<?php ob_start();?>
-		<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+		<title><?php //bloginfo('name'); ?><?php wp_title(); ?></title>
 		<meta http-equiv="Expires" content="Tue, 01 Jan 2015 12:12:12 GMT">
 		<meta http-equiv="Pragma" content="no-cache">
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
