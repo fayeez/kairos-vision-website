@@ -32,6 +32,9 @@ html, body{
 	font-family: "Neuton", serif;
 	font-weight: 700;
 }
+strong {
+	font-weight: 900;
+}
 /*Font setup*/
 @font-face{
 	font-family: "TrajanProRegular";
