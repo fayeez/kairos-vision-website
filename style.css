@@ -182,9 +182,6 @@ img {
 img .no-border {
 	border: none !important;
 }
-#bit {
-	bottom: 230px !important; 
-}
 .portfolio a img{
 	width: 102%;
 }
@@ -254,6 +251,7 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .alignleft {float:left;  }
 .aligncenter {display: block; margin-left: auto; margin-right: auto}
 article, p {
+	font-weight: 100;
 	line-height: 1.9em;
 	margin-top: 10px;
 	font-size: 1em;
