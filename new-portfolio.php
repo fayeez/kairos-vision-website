@@ -43,8 +43,7 @@ Template Name: Client Portfolio - 2 Columns
 										<div class="box20 portfolio-description">
 											<h4><?php echo $attachment->post_title; ?></h4>
 											<?php echo $attachment->post_content;
-											$alt = get_post_meta($attachment, '_wp_attachment_image_alt', true);
-											if(count($alt)) echo $alt;
+											echo get_class_methods($attachment);
 											//echo get_post(get_post_thumbnail_id())->post_excerpt;
 
 
