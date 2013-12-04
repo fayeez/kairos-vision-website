@@ -25,10 +25,10 @@ Template Name: New Portfolio - 2 Columns
 					);
 					foreach ($args as $arg)
 					{
-						echo $arg;
+						echo $arg . "  <br/> ";
 					}
 					$attachments = get_children($args);
-					//echo $attachments;
+					echo $attachments[0];
 					
 					//if (!$attachments)
 					//{ ?>
