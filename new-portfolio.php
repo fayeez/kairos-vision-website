@@ -41,7 +41,7 @@ Template Name: New Portfolio - 2 Columns
 										</a>
 										</div>
 										<div class="bg2">
-											Hello I am testing something
+											<?php echo $attachment->post_content; ?>
 										</div>
 
 								<?php	}
