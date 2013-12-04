@@ -32,8 +32,7 @@ Template Name: New Portfolio - 2 Columns
 							
 							{ ?>
 							<div class="box8 offset2 two-columns">
-								hello
-								<?php if (strstr($attachment->post_mime_type, 'image' ) != FALSE) {
+								<?php echo $attachment; if (strstr($attachment->post_mime_type, 'image' ) != FALSE) {
 									?>
 										<div class="portfolio-img-thumbs">
 										<a title="<?php echo $attachment->post_content; ?>" href="<?php echo $attachment->guid; ?>" rel="prettyPhoto[pp_gal]">
