@@ -237,13 +237,13 @@ img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .portfolio-img-thumbs {
-	width: 100%; height: 166px;
+	width: 100%; height: 266px;
 	overflow: hidden; background-color: black;
 	border: 1px solid #8b232d;
 
 }
 .two-columns a img{
-	width: 100%; min-height: 166px;
+	width: 100%; min-height: 266px;
 	border: none !important;
 }
 .three-columns a img{
