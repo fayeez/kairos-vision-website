@@ -26,8 +26,8 @@ Template Name: New Portfolio - 2 Columns
 					$attachments = get_children($args);
 					//echo $attachments;
 					
-					if (!$attachments)
-					{ ?>
+					//if (!$attachments)
+					//{ ?>
 						<div class="box19 offset2 portfolio">
 						<?php foreach($attachments as $attachment)
 							
@@ -42,7 +42,7 @@ Template Name: New Portfolio - 2 Columns
 						</div>
 						
 					<?php
-					} ?>
+					//} ?>
 				</div>
 			</article>
 				
