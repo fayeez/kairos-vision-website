@@ -40,7 +40,7 @@ Template Name: Client Portfolio - 2 Columns
 											<img alt="<?php echo $attachment->post_title; ?>" src="<?php echo $attachment->guid; ?>"/>
 										</a>
 										</div>
-										<div class="box20">
+										<div class="box20 portfolio-description">
 											<h4><?php echo $attachment->post_title; ?></h4>
 											<?php echo $attachment->post_content; ?>
 										</div>
