@@ -18,27 +18,57 @@ Template Name: New Portfolio - 2 Columns
 						'numberposts' => -1, // Using -1 loads all posts  
 						'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager  
 						'order'=> 'ASC',  
-						//'post_mime_type' => implode( ',', get_allowed_mime_types() ), // We only want to pull images into this array, what about videos?
+						'post_mime_type' => implode( ',', get_allowed_mime_types() ), // We only want to pull images into this array, what about videos?
 						'post_parent' => $post->ID, // Important part - ensures the associated images are loaded 
 						'post_status' => null, 
-						'post_type' => 'any'  
+						'post_type' => 'attachment'  
 					);
-					foreach ($args as $arg)
-					{
-						echo $arg . "  <br/> ";
-					}
-					echo get_children($args);
 					$attachments = get_children($args);
-					echo count($attachments);
 					
-					//if (!$attachments)
-					//{ ?>
+					if ($attachments)
+					{ ?>
 						<div class="box19 offset2 portfolio">
 						<?php foreach($attachments as $attachment)
 							
-							{ echo $attachment; ?>
-							
-							
+							{ ?>
+							<div class="box8 offset2 two-columns">
+								
+								<?php if (strstr($attachment->post_mime_type, 'image' ) != FALSE) {
+									?>
+										<div class="portfolio-img-thumbs">
+										<a title="<?php echo $attachment->post_content; ?>" href="<?php echo $attachment->guid; ?>" rel="prettyPhoto[pp_gal]">
+											<img alt="<?php echo $attachment->post_title; ?>" src="<?php echo $attachment->guid; ?>"/>
+										</a>
+										</div>
+
+								<?php	}
+								elseif (strpos($attachment->post_mime_type, 'video' ) !== FALSE){
+									
+									if (strstr($attachment->guid, 'youtube') != FALSE){
+										
+										$img_id = str_replace('http://www.youtube.com/watch?v=', '', $attachment->guid);
+									?>
+										
+										<a title="<?php echo $attachment->post_content; ?>" href="<?php echo $attachment->guid; ?>" rel="prettyPhoto[pp_gal]">
+											<img alt="<?php echo $attachment->post_title; ?>" src="<?php echo 'http://img.youtube.com/vi/'.$img_id.'/0.jpg' //<?php bloginfo('template_directory')/images/icons/video-icon.png;?>"/>
+										</a>
+									<?php }
+									elseif (strstr($attachment->guid, 'vimeo') != FALSE){
+										$img_id = str_replace('http://vimeo.com/', '', $attachment->guid);
+										$hash = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$img_id.php"));
+										?>
+										<a title="<?php echo $attachment->post_content; ?>" href="<?php echo $attachment->guid; ?>" rel="prettyPhoto[pp_gal]">
+											<img alt="<?php echo $attachment->post_title; ?>" src="<?php echo $hash[0]['thumbnail_large'];?>" />
+										</a>
+									<?php }
+									else {?>
+									
+										<a title="<?php echo $attachment->post_content; ?>" href="<?php echo $attachment->guid; ?>" rel="prettyPhoto[pp_gal]">
+											<img alt="<?php echo $attachment->post_title; ?>" src="<?php bloginfo('template_directory'); ?>/images/icons/video-icon.png"/>
+										</a>
+									<?php } ?>
+								<?php } ?>
+							</div>  
 							<?php }
 							
 							?>
@@ -47,7 +77,7 @@ Template Name: New Portfolio - 2 Columns
 						</div>
 						
 					<?php
-					//} ?>
+					} ?>
 				</div>
 			</article>
 				
