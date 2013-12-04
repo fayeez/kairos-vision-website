@@ -47,10 +47,10 @@ Template Name: Client Portfolio - 2 Columns
 											<?php
 											echo "WHAT IS GOING ON";
 											//echo $attachment->post_content;
-											$attachment->post_excerpt;
-											//$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+											//$attachment->post_excerpt;
+											$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 											//if(count($alt)) {
-											//	echo $alt;
+											echo $alt . "alt";
 											//}
 											//else{
 											//	echo "wtf";
