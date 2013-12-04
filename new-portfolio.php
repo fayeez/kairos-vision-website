@@ -42,7 +42,7 @@ Template Name: Client Portfolio - 2 Columns
 										</div>
 										<div class="box20 portfolio-description">
 											<h4><?php echo $attachment->post_title; ?></h4>
-											<?php echo $attachment->post_content; ?>
+											<?php echo $attachment->post_content; $attachment->post_excerpt; ?>
 										</div>
 
 								<?php	}
