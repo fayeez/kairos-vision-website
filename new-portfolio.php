@@ -29,7 +29,7 @@ Template Name: New Portfolio - 2 Columns
 					}
 					echo get_children($args);
 					$attachments = get_children($args);
-					echo $attachments[0];
+					echo count($attachments);
 					
 					//if (!$attachments)
 					//{ ?>
