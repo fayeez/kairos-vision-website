@@ -35,7 +35,7 @@ Template Name: New Portfolio - 2 Columns
 								
 								<?php if (strstr($attachment->post_mime_type, 'image' ) != FALSE) {
 									?>
-										<div class="portfolio-img-thumbs">
+										<div class="portfolio-img-thumbs bg-col1">
 										<a title="<?php echo $attachment->post_content; ?>" href="<?php echo $attachment->guid; ?>" rel="prettyPhoto[pp_gal]">
 											<img alt="<?php echo $attachment->post_title; ?>" src="<?php echo $attachment->guid; ?>"/>
 										</a>
