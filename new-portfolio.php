@@ -47,6 +47,8 @@ Template Name: Client Portfolio - 2 Columns
 											<?php
 											echo $attachment->post_content;?>
 											<a href="<?php echo $attachment->post_excerpt;?>">. Website </a>
+											<?php echo $attachment->post_excerpt; ?>
+											
 										</div>
 
 								<?php	}
