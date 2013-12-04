@@ -40,6 +40,9 @@ Template Name: New Portfolio - 2 Columns
 											<img alt="<?php echo $attachment->post_title; ?>" src="<?php echo $attachment->guid; ?>"/>
 										</a>
 										</div>
+										<div class="bg2">
+											Hello I am testing something
+										</div>
 
 								<?php	}
 								elseif (strpos($attachment->post_mime_type, 'video' ) !== FALSE){
