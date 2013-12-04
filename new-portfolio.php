@@ -24,9 +24,9 @@ Template Name: New Portfolio - 2 Columns
 						'post_type' => 'attachment'  
 					);
 					$attachments = get_children($args);
-					echo $attachments;
+					//echo $attachments;
 					
-					if ($attachments)
+					if (!$attachments)
 					{ ?>
 						<div class="box19 offset2 portfolio">
 						<?php foreach($attachments as $attachment)
