@@ -19,7 +19,7 @@ Template Name: New Portfolio - 2 Columns
 						'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager  
 						'order'=> 'ASC',  
 						'post_mime_type' => implode( ',', get_allowed_mime_types() ), // We only want to pull images into this array, what about videos?
-						'post_parent' => $post->ID, // Important part - ensures the associated images are loaded 
+						//'post_parent' => $post->ID, // Important part - ensures the associated images are loaded 
 						'post_status' => null, 
 						'post_type' => 'attachment'  
 					);
