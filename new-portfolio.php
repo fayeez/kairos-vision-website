@@ -27,7 +27,7 @@ Template Name: New Portfolio - 2 Columns
 					$attachments = get_children(array('post_parent' => $post->ID,
                         'post_status' => 'inherit',
                         'post_type' => 'attachment',
-                        'post_mime_type' => implode( ',', get_allowed_mime_types() ),
+                        'post_mime_type' => 'image',
                         'order' => 'ASC',
                         'orderby' => 'menu_order ID'));
 
