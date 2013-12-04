@@ -23,17 +23,9 @@ Template Name: New Portfolio - 2 Columns
 						'post_status' => null, 
 						'post_type' => 'attachment'  
 					);
-					
-					$attachments = get_children(array('post_parent' => $post->ID,
-                        'post_status' => 'inherit',
-                        'post_type' => 'attachment',
-                        'post_mime_type' => 'image',
-                        'order' => 'ASC',
-                        'orderby' => 'menu_order ID'));
-
-					foreach($attachments as $att_id => $attachment) {
-						$full_img_url = wp_get_attachment_url($attachment->ID);
-						echo $full_img_url;
+					foreach ($args as $arg)
+					{
+						echo $arg;
 					}
 					$attachments = get_children($args);
 					//echo $attachments;
