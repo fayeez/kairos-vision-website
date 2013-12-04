@@ -43,6 +43,7 @@ Template Name: Client Portfolio - 2 Columns
 										<div class="box20 portfolio-description">
 											<h4><?php echo $attachment->post_title; ?></h4>
 											<?php echo $attachment->post_content; $attachment->post_excerpt; ?>
+											<a href="http://www.imas-uk.com" title="IMAS" target="_blank">IMAS</a>
 										</div>
 
 								<?php	}
