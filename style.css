@@ -191,6 +191,9 @@ img .no-border {
 .portfolio a img:hover {
 	border: 1px solid #b9a228;
 }
+.portfolio-description {
+	background: #d6c3a8;
+}
 .featured-img {
 	width: inherit; height: inherit;
 	overflow: hidden;
