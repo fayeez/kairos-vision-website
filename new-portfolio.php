@@ -33,7 +33,7 @@ Template Name: New Portfolio - 2 Columns
 
 					foreach($attachments as $att_id => $attachment) {
 						$full_img_url = wp_get_attachment_url($attachment->ID);
-						// Your Code here
+						echo $full_img_url;
 					}
 					$attachments = get_children($args);
 					//echo $attachments;
