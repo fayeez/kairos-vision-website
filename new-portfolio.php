@@ -43,7 +43,7 @@ Template Name: Client Portfolio - 2 Columns
 										<div class="box20 portfolio-description">
 											<h4><?php echo $attachment->post_title; ?></h4>
 											<?php echo $attachment->post_content;
-											echo get_class_methods($attachment);
+											foreach (get_class_methods($attachment) as $cm) {echo $cm;}
 											//echo get_post(get_post_thumbnail_id())->post_excerpt;
 
 
