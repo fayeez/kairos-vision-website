@@ -13,7 +13,8 @@ Template Name: Client Portfolio - 2 Columns
 					<header>
 						<h2><?php the_title(); ?></h2>
 					</header>
-					<?php 
+					<?php
+					$thumbnail_id = get_post_thumbnail_id($post->ID);
 					$args = array(  
 						'numberposts' => -1, // Using -1 loads all posts  
 						'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager  
@@ -21,7 +22,8 @@ Template Name: Client Portfolio - 2 Columns
 						'post_mime_type' => implode( ',', get_allowed_mime_types() ), // We only want to pull images into this array, what about videos?
 						'post_parent' => $post->ID, // Important part - ensures the associated images are loaded 
 						'post_status' => null, 
-						'post_type' => 'attachment'  
+						'post_type' => 'attachment',
+						'include' => $thumbnail_id,
 					);
 					$attachments = get_children($args);
 					
@@ -43,8 +45,9 @@ Template Name: Client Portfolio - 2 Columns
 										<div class="box20 portfolio-description">
 											<h4><?php echo $attachment->post_title; ?></h4>
 											<?php echo $attachment->post_content;
-											foreach (get_class_methods($attachment) as $cm) {echo $cm;}
-											//echo get_post(get_post_thumbnail_id())->post_excerpt;
+											$attachment->post_excerpt;
+											$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+											if(count($alt)) echo $alt;
 
 
 											?>
