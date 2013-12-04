@@ -24,6 +24,7 @@ Template Name: New Portfolio - 2 Columns
 						'post_type' => 'attachment'  
 					);
 					$attachments = get_children($args);
+					echo $attachments;
 					
 					if ($attachments)
 					{ ?>
