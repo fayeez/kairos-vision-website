@@ -18,10 +18,10 @@ Template Name: New Portfolio - 2 Columns
 						'numberposts' => -1, // Using -1 loads all posts  
 						'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager  
 						'order'=> 'ASC',  
-						'post_mime_type' => implode( ',', get_allowed_mime_types() ), // We only want to pull images into this array, what about videos?
+						//'post_mime_type' => implode( ',', get_allowed_mime_types() ), // We only want to pull images into this array, what about videos?
 						'post_parent' => $post->ID, // Important part - ensures the associated images are loaded 
 						'post_status' => null, 
-						'post_type' => 'attachment'  
+						'post_type' => 'any'  
 					);
 					foreach ($args as $arg)
 					{
