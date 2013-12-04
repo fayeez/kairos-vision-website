@@ -47,7 +47,12 @@ Template Name: Client Portfolio - 2 Columns
 											<?php echo $attachment->post_content;
 											$attachment->post_excerpt;
 											$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-											if(count($alt)) {echo $alt} else {echo "wtf"};
+											if(count($alt)) {
+												echo $alt;
+											}
+											else{
+												echo "wtf";
+											}
 
 
 											?>
