@@ -32,7 +32,7 @@ Template Name: New Portfolio - 2 Columns
 							
 							{ ?>
 							<div class="box8 offset2 two-columns">
-								
+								hello
 								<?php if (strstr($attachment->post_mime_type, 'image' ) != FALSE) {
 									?>
 										<div class="portfolio-img-thumbs">
