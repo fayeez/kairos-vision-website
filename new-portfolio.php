@@ -27,6 +27,7 @@ Template Name: New Portfolio - 2 Columns
 					{
 						echo $arg . "  <br/> ";
 					}
+					echo get_children($args);
 					$attachments = get_children($args);
 					echo $attachments[0];
 					
