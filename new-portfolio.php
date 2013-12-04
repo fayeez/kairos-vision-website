@@ -45,19 +45,8 @@ Template Name: Client Portfolio - 2 Columns
 										<div class="box20 portfolio-description">
 											<h4><?php echo $attachment->post_title; ?></h4>
 											<?php
-											echo "WHAT IS GOING ON";
-											//echo $attachment->post_content;
-											echo $attachment->post_excerpt;
-											$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-											//if(count($alt)) {
-											echo $alt . "alt";
-											//}
-											//else{
-											//	echo "wtf";
-											//}
-
-
-											?>
+											echo $attachment->post_content;?>
+											<a href"<?php $attachment->post_excerpt;?>"> Website </a>
 										</div>
 
 								<?php	}
