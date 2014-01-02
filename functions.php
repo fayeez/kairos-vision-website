@@ -48,7 +48,7 @@
         else {
             $imgdir=scandir("/tmp");
         }
-        $imgdir=scandir("/home2/kairosvi/public_html/wp-content/themes/sleek/images");
+        //$imgdir=scandir("/home2/kairosvi/public_html/wp-content/themes/sleek/images");
         shuffle($imgdir);
         $imgformats=array('.jpg', '.jpeg', '.png', '.tiff', '.tif', '.bmp', '.gif');
         $id=1;
