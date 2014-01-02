@@ -48,7 +48,7 @@
         else {
             $imgdir=scandir("/tmp");
         }
-        //$imgdir=scandir("/home2/kairosvi/public_html/wp-content/themes/sleek/images");
+        $imgdir=scandir("/home2/kairosvi/public_html/wp-content/themes/kairos-vision/images");
         shuffle($imgdir);
         $imgformats=array('.jpg', '.jpeg', '.png', '.tiff', '.tif', '.bmp', '.gif');
         $id=1;
@@ -58,7 +58,7 @@
         {
             unset($imgdir[$key]);
         }
-        echo $imgdir;
+        
         foreach($imgdir as $img)
         {
             foreach($imgformats as $imgformat)
