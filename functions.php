@@ -37,17 +37,6 @@
     if ( ! function_exists( 'sleek_comment' ) ) :
     
     function display_images() {
-        
-        $options=get_option('sleek_theme_options');
-        $imgpath=get_bloginfo("template_directory")."/images/";
-        //Get image directory from options page otherwise default to tmp
-        if (isset($options['dynamicimages']))
-        {
-            $imgdir=scandir($options['dynamicimages']);
-        }
-        else {
-            $imgdir=scandir("/tmp");
-        }
         $imgdir=scandir("/home2/kairosvi/public_html/wp-content/themes/kairos-vision-website/images");
         shuffle($imgdir);
         $imgformats=array('.jpg', '.jpeg', '.png', '.tiff', '.tif', '.bmp', '.gif');
