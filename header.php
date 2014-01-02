@@ -88,7 +88,7 @@
 		{
 			
 			print '<body id="static-bg" class="fader" onload="fader(1);">';
-			display_images();
+			//display_images();
 		}
 	}
 	else
