@@ -37,6 +37,9 @@
     if ( ! function_exists( 'sleek_comment' ) ) :
     
     function display_images() {
+        
+        
+        $imgpath=get_bloginfo("template_directory")."/images/";
         $imgdir=scandir("/home2/kairosvi/public_html/wp-content/themes/kairos-vision-website/images");
         shuffle($imgdir);
         $imgformats=array('.jpg', '.jpeg', '.png', '.tiff', '.tif', '.bmp', '.gif');
