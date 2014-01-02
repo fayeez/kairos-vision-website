@@ -50,7 +50,6 @@
         }
         //$imgdir=scandir("/home2/kairosvi/public_html/wp-content/themes/sleek/images");
         shuffle($imgdir);
-        $imgdir=scandir($imgpath);
         $imgformats=array('.jpg', '.jpeg', '.png', '.tiff', '.tif', '.bmp', '.gif');
         $id=1;
         $currentFile=$_SERVER["PHP_SELF"];
@@ -59,6 +58,7 @@
         {
             unset($imgdir[$key]);
         }
+        echo $imgdir;
         foreach($imgdir as $img)
         {
             foreach($imgformats as $imgformat)
