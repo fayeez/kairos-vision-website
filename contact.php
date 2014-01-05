@@ -3,8 +3,6 @@
 Template Name: Contact
 */
 
-#TODO: 
-
 if(isset($_POST['submit'])){
 	if(trim($_POST['contactName']) == '') {
 		$nameError = "Please enter your name.";
