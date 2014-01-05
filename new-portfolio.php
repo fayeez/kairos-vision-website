@@ -43,12 +43,10 @@ Template Name: Client Portfolio - 2 Columns
 										</a>
 										</div>
 										<div class="box20 portfolio-description">
-											<h4><?php echo $attachment->post_title; ?></h4>
+											<h4><strong><?php echo $attachment->post_title; ?></strong></h4>
 											<?php
 											echo $attachment->post_content;
 											if ($attachment->post_excerpt){
-												
-											
 											?>
 											
 											<a href="<?php echo $attachment->post_excerpt;?>"> Click here for website. </a>
