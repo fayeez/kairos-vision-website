@@ -5,7 +5,7 @@
             <div class="box20">
                 <div class="box3">
                     <ul class="footer-links">
-                        <li>Kairos Vision 2013 </li>
+                        <li>Kairos Vision <?php echo date("Y"); ?> </li>
                         
                     </ul>
                 </div>
