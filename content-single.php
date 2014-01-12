@@ -24,7 +24,7 @@
 							<?php the_content('<p class="serif">' . __('Read the rest of this entry &raquo;', 'kubrick') . '</p>'); ?>
 			
 							<?php wp_link_pages(array('before' => '<p><strong>' . __('Pages:', 'kubrick') . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-							<?php the_tags( '<p>' . __('Tags:', 'kubrick') . ' ', ', ', '</p>'); ?>
+							<?php the_tags( '<p class="tags">' . __('Tags:', 'kubrick') . ' ', ', ', '</p>'); ?>
                             
 						</div>
 					</div>
