@@ -30,7 +30,7 @@ html, body{
     margin: 0%;
 	min-width: 100%; width: 100%;
 	font-family: "Neuton", serif;
-	font-weight: 700;
+	/*font-weight: 700;*/
 }
 strong {
 	font-weight: 900;
@@ -265,7 +265,7 @@ article, p {
 }
 
 h1, h2{
-	font-weight: 600 !important;
+	/*font-weight: 600 !important;*/
 }
 h1, h2, h3 {
 	color: #8b232d;
@@ -276,7 +276,7 @@ h1, h2, h3 {
 }
 h2, h3 {
 	letter-spacing: 1pt;
-	font-weight: 100;
+	/*font-weight: 100;*/
 }
 h2 {
 	text-transform: uppercase !important;
@@ -286,7 +286,7 @@ h3 {
 	margin-top: 2%;
 }
 a {
-	font-weight: 100;
+	/*font-weight: 100;*/
     text-decoration: none;
 	color:  inherit;
 }
@@ -396,7 +396,7 @@ a:hover {
 }
 .logo-style h1{
 	margin-top: 7.25%;
-	font-weight: 100;
+	/*font-weight: 100;*/
     padding-left: 15%;
 	text-align: center;
 }
