@@ -36,14 +36,7 @@ html, body{
 strong {
 	/*font-weight: 900 !important;*/
 }
-/*Font setup*/
-@font-face{
-	font-family: "TrajanProRegular";
-	src: url("fonts/TrajanPro-Regular.otf");
-}
-.trajan-font {
-	font-family: "TrajanProRegular" !important;
-}
+
 .font-medium {
 	font-size: 1.3em !important;
 }
