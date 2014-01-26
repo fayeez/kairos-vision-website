@@ -25,7 +25,7 @@
 			
 							<?php wp_link_pages(array('before' => '<p><strong>' . __('Pages:', 'kubrick') . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 							<?php the_tags( '<p class="tags">' . __('Tags:', 'kubrick') . ' ', ', ', '</p>'); ?>
-                            
+                            <hr/>
 						</div>
 					</div>
 			
@@ -35,6 +35,5 @@
 					<p><?php _e('Sorry, no posts matched your criteria.', 'kubrick'); ?></p>
 			
 			<?php endif; ?>
-			<hr/>
         </div>
     </article>
