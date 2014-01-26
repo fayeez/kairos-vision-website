@@ -35,6 +35,6 @@
 					<p><?php _e('Sorry, no posts matched your criteria.', 'kubrick'); ?></p>
 			
 			<?php endif; ?>
+			<hr/>
         </div>
-		<hr/>
     </article>
