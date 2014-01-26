@@ -36,5 +36,5 @@
 			
 			<?php endif; ?>
         </div>
+		<hr/>
     </article>
-	<hr/>
